@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional portfolio of Bangaru Santosh - Computer Science Student & Full-Stack Developer. Exploring projects, skills, certifications, and contact details.">
+  <title>Bangaru Santosh | Portfolio</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <!-- Background Glow Orbs for Glassmorphism Depth -->
+  <div class="bg-glow-container">
+    <div class="bg-glow-orb orb-1"></div>
+    <div class="bg-glow-orb orb-2"></div>
+    <div class="bg-glow-orb orb-3"></div>
+  </div>
+  
+  <!-- Navigation Header -->
+  <header id="header" class="header">
+    <div class="header-container">
+      <a href="#hero" class="logo">
+        <span class="logo-accent">&lt;</span>BS<span class="logo-accent">/&gt;</span>
+        <span class="logo-text">Santosh.dev</span>
+      </a>
+      
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons (Theme Toggle + Mobile Menu Trigger) -->
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme" title="Toggle dark/light mode">
+          <i data-lucide="moon" class="theme-icon-dark"></i>
+          <i data-lucide="sun" class="theme-icon-light"></i>
+        </button>
+        <button id="mobile-menu-trigger" class="mobile-menu-trigger" aria-label="Toggle mobile menu">
+          <i data-lucide="menu" class="icon-open"></i>
+          <i data-lucide="x" class="icon-close"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Sidebar Overlay -->
+  <div id="mobile-menu" class="mobile-menu">
+    <nav class="nav-mobile">
+      <ul class="nav-mobile-links">
+        <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#certifications" class="mobile-nav-link">Certifications</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="section-container hero-grid">
+        <div class="hero-content reveal reveal-left">
+          <span class="hero-badge">Welcome to my space</span>
+          <h1 class="hero-title">Hi, I'm <span class="highlight-text">Bangaru Santosh</span></h1>
+          <h2 class="hero-subtitle">I'm a <span id="typed-text" class="highlight-text"></span><span class="typed-cursor">|</span></h2>
+          <p class="hero-description">
+            I am a passionate coder dedicated to building high-performance, visually stunning, and user-centric web applications. Bridging clean architecture with modern web aesthetics.
+          </p>
+          <div class="hero-ctas">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Contact Me</span>
+              <i data-lucide="mail"></i>
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual reveal reveal-right">
+          <div class="profile-image-wrapper">
+            <div class="glowing-orb"></div>
+            <img src="assets/images/profile.jpg" alt="Bangaru Santosh - Profile Image" class="profile-image">
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <a href="#about" aria-label="Scroll to about section">
+          <div class="mouse">
+            <div class="wheel"></div>
+          </div>
+          <span class="scroll-text">Scroll Down</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <h2 class="section-title">About Me</h2>
+          <div class="title-underline"></div>
+        </div>
+        <div class="about-grid">
+          <div class="about-info card reveal reveal-left">
+            <h3 class="card-subtitle">My Story</h3>
+            <p class="about-text">
+              I am a final-year Computer Science student with a deep fascination for full-stack engineering and cloud technologies. I love solving algorithm challenges, designing clean UI layouts, and architecting database structures that scale.
+            </p>
+            <p class="about-text">
+              My core philosophy is writing simple, maintainable code to solve complex, real-world problems. Whether constructing API pipelines or fine-tuning CSS animations, I always strive for execution speed and visual perfection.
+            </p>
+            <div class="about-resume-cta">
+              <a href="assets/Bangaru_Santosh_Resume.pdf" download="Bangaru_Santosh_Resume.pdf" class="btn btn-primary" id="btn-resume">
+                <i data-lucide="download"></i>
+                <span>Download Resume</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="about-details-col">
+            <!-- Education Card -->
+            <div class="details-card card reveal reveal-right">
+              <div class="card-icon-header">
+                <i data-lucide="graduation-cap" class="details-icon"></i>
+                <h3 class="card-subtitle">Education</h3>
+              </div>
+              <div class="education-item">
+                <h4 class="edu-degree">Bachelor of Technology in Computer Science</h4>
+                <p class="edu-inst">State University of Engineering</p>
+                <p class="edu-date">2023 - Present (Expected Graduation: 2027)</p>
+              </div>
+              <div class="education-item">
+                <h4 class="edu-degree">Higher Secondary Education (PCM)</h4>
+                <p class="edu-inst">National Public School</p>
+                <p class="edu-date">Completed 2023</p>
+              </div>
+            </div>
+
+            <!-- Career Goals Card -->
+            <div class="details-card card reveal reveal-right">
+              <div class="card-icon-header">
+                <i data-lucide="target" class="details-icon"></i>
+                <h3 class="card-subtitle">Career Goals</h3>
+              </div>
+              <p class="goals-text">
+                My immediate goal is to transition into a Full-Stack Engineer role where I can build scalable SaaS applications and collaborate with multi-disciplinary teams. In the long term, I aim to delve deeper into systems architecture and machine learning operations (MLOps) to design robust cloud ecosystems.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <h2 class="section-title">My Toolbox</h2>
+          <div class="title-underline"></div>
+        </div>
+        
+        <div class="skills-grid">
+          <!-- Programming Languages -->
+          <div class="skills-card card reveal">
+            <div class="skill-card-header">
+              <i data-lucide="code-2" class="skill-category-icon"></i>
+              <h3>Languages</h3>
+            </div>
+            <ul class="skills-list">
+              <li><span class="skill-badge"><i data-lucide="chevron-right"></i> JavaScript (ES6+)</span></li>
+              <li><span class="skill-badge"><i data-lucide="chevron-right"></i> Python</span></li>
+              <li><span class="skill-badge"><i data-lucide="chevron-right"></i> Java</span></li>
+              <li><span class="skill-badge"><i data-lucide="chevron-right"></i> C++</span></li>
+            </ul>
+          </div>
+
+          <!-- Frontend Development -->
+          <div class="skills-card card reveal">
+            <div class="skill-card-header">
+              <i data-lucide="layout" class="skill-category-icon"></i>
+              <h3>Frontend</h3>
+            </div>
+            <ul class="skills-list">
+              <li><span class="skill-badge"><i data-lucide="chevron-right"></i> HTML5 &amp; CSS3</span></li>
+              <li><span class="skill-badge"><i data-lucide="chevron-right"></i> React.js</span></li>
+              <li><span class="skill-badge"><i data-lucide="chevron-right"></i> Next.js</span></li>
+              <li><span class="skill-badge"><i data-lucide="chevron-right"></i> Responsive Web Design</span></li>
+            </ul>
+          </div>
+
+          <!-- Backend Development -->
+          <div class="skills-card card reveal">
+            <div class="skill-card-header">
+              <i data-lucide="server" class="skill-category-icon"></i>
+              <h3>Backend</h3>
+            </div>
+            <ul class="skills-list">
+              <li><span class="skill-badge"><i data-lucide="chevron-right"></i> Node.js</span></li>
+              <li><span class="skill-badge"><i data-lucide="chevron-right"></i> Express.js</span></li>
+              <li><span class="skill-badge"><i data-lucide="chevron-right"></i> RESTful APIs</span></li>
+              <li><span class="skill-badge"><i data-lucide="chevron-right"></i> GraphQL</span></li>
+            </ul>
+          </div>
+
+          <!-- Databases -->
+          <div class="skills-card card reveal">
+            <div class="skill-card-header">
+              <i data-lucide="database" class="skill-category-icon"></i>
+              <h3>Databases</h3>
+            </div>
+            <ul class="skills-list">
+              <li><span class="skill-badge"><i data-lucide="chevron-right"></i> MongoDB</span></li>
+              <li><span class="skill-badge"><i data-lucide="chevron-right"></i> MySQL / PostgreSQL</span></li>
+              <li><span class="skill-badge"><i data-lucide="chevron-right"></i> Redis</span></li>
+              <li><span class="skill-badge"><i data-lucide="chevron-right"></i> Firebase DB</span></li>
+            </ul>
+          </div>
+
+          <!-- Tools & Technologies -->
+          <div class="skills-card card reveal">
+            <div class="skill-card-header">
+              <i data-lucide="wrench" class="skill-category-icon"></i>
+              <h3>Tools &amp; Tech</h3>
+            </div>
+            <ul class="skills-list">
+              <li><span class="skill-badge"><i data-lucide="chevron-right"></i> Git &amp; GitHub</span></li>
+              <li><span class="skill-badge"><i data-lucide="chevron-right"></i> Docker</span></li>
+              <li><span class="skill-badge"><i data-lucide="chevron-right"></i> AWS (S3, EC2)</span></li>
+              <li><span class="skill-badge"><i data-lucide="chevron-right"></i> Figma</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <h2 class="section-title">Featured Work</h2>
+          <div class="title-underline"></div>
+        </div>
+        
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card card reveal">
+            <div class="project-image-container">
+              <img src="assets/images/project1.png" alt="AI Task Manager Project Screenshot" class="project-img">
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">AI-Powered Task Manager</h3>
+              <p class="project-description">
+                A collaborative task management application featuring intelligent auto-scheduling, Kanban workflows, real-time sync, and comprehensive productivity analytics.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">React.js</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">OpenAI</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/bangaru-santosh/ai-task-manager" target="_blank" rel="noopener noreferrer" class="project-link btn btn-icon-only" aria-label="GitHub Repository">
+                  <i data-lucide="github"></i>
+                  <span>Code</span>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="project-link btn btn-icon-only" aria-label="Live Demo">
+                  <i data-lucide="external-link"></i>
+                  <span>Live Demo</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card card reveal">
+            <div class="project-image-container">
+              <img src="assets/images/project2.png" alt="Smart Home IoT Dashboard Screenshot" class="project-img">
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Smart Home IoT Controller</h3>
+              <p class="project-description">
+                A centralized, glassmorphic analytics control panel for home automation devices. Real-time temperature control, automated lighting scripts, and utility trends.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">JavaScript (ES6)</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">Chart.js</span>
+                <span class="tech-tag">WebSockets</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/bangaru-santosh/smart-home-iot" target="_blank" rel="noopener noreferrer" class="project-link btn btn-icon-only" aria-label="GitHub Repository">
+                  <i data-lucide="github"></i>
+                  <span>Code</span>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="project-link btn btn-icon-only" aria-label="Live Demo">
+                  <i data-lucide="external-link"></i>
+                  <span>Live Demo</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card card reveal">
+            <div class="project-image-container">
+              <img src="assets/images/project3.png" alt="Collaborative Code Editor Screenshot" class="project-img">
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">CoEdit - Realtime Code Workspace</h3>
+              <p class="project-description">
+                A web-based collaborative code editor enabling team pair programming. Features multi-cursor support, syntax highlighting for 10+ languages, and in-browser compilation.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">Socket.io</span>
+                <span class="tech-tag">Redis</span>
+                <span class="tech-tag">Docker</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/bangaru-santosh/coedit-realtime" target="_blank" rel="noopener noreferrer" class="project-link btn btn-icon-only" aria-label="GitHub Repository">
+                  <i data-lucide="github"></i>
+                  <span>Code</span>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="project-link btn btn-icon-only" aria-label="Live Demo">
+                  <i data-lucide="external-link"></i>
+                  <span>Live Demo</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications-section">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <h2 class="section-title">Certifications</h2>
+          <div class="title-underline"></div>
+        </div>
+        
+        <div class="certifications-grid">
+          <!-- Cert 1 -->
+          <div class="cert-card card reveal">
+            <div class="cert-header">
+              <div class="cert-badge-icon">
+                <i data-lucide="award" class="cert-icon"></i>
+              </div>
+              <div>
+                <h3 class="cert-title">Meta Front-End Developer Professional Certificate</h3>
+                <p class="cert-org">Meta (via Coursera)</p>
+              </div>
+            </div>
+            <div class="cert-body">
+              <p class="cert-date">Completed: November 2025</p>
+              <a href="https://coursera.org" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm cert-btn">
+                <span>View Certificate</span>
+                <i data-lucide="external-link"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="cert-card card reveal">
+            <div class="cert-header">
+              <div class="cert-badge-icon">
+                <i data-lucide="award" class="cert-icon"></i>
+              </div>
+              <div>
+                <h3 class="cert-title">AWS Certified Developer - Associate</h3>
+                <p class="cert-org">Amazon Web Services</p>
+              </div>
+            </div>
+            <div class="cert-body">
+              <p class="cert-date">Completed: February 2026</p>
+              <a href="https://aws.amazon.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm cert-btn">
+                <span>View Certificate</span>
+                <i data-lucide="external-link"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="cert-card card reveal">
+            <div class="cert-header">
+              <div class="cert-badge-icon">
+                <i data-lucide="award" class="cert-icon"></i>
+              </div>
+              <div>
+                <h3 class="cert-title">Data Structures &amp; Algorithms Specialization</h3>
+                <p class="cert-org">Stanford University (via Coursera)</p>
+              </div>
+            </div>
+            <div class="cert-body">
+              <p class="cert-date">Completed: August 2024</p>
+              <a href="https://coursera.org" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm cert-btn">
+                <span>View Certificate</span>
+                <i data-lucide="external-link"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Info Column -->
+          <div class="contact-info-col reveal reveal-left">
+            <h3 class="contact-subtitle">Let's build something epic!</h3>
+            <p class="contact-pitch">
+              I am open to summer internships, junior full-stack developer roles, and interesting freelance assignments. Feel free to shoot me a message or connect through my social channels. I usually respond within 24 hours.
+            </p>
+            
+            <div class="contact-details-list">
+              <div class="contact-detail-item">
+                <i data-lucide="mail" class="contact-detail-icon"></i>
+                <div>
+                  <h4 class="detail-label">Email</h4>
+                  <a href="mailto:santosh.bangaru@example.com" class="detail-value">santosh.bangaru@example.com</a>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <i data-lucide="map-pin" class="contact-detail-icon"></i>
+                <div>
+                  <h4 class="detail-label">Location</h4>
+                  <p class="detail-value">Hyderabad, Telangana, India</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-socials">
+              <a href="https://github.com/bangaru-santosh" target="_blank" rel="noopener noreferrer" class="social-link-btn" aria-label="GitHub Profile">
+                <i data-lucide="github"></i>
+              </a>
+              <a href="https://linkedin.com/in/bangaru-santosh" target="_blank" rel="noopener noreferrer" class="social-link-btn" aria-label="LinkedIn Profile">
+                <i data-lucide="linkedin"></i>
+              </a>
+              <a href="mailto:santosh.bangaru@example.com" class="social-link-btn" aria-label="Send Email">
+                <i data-lucide="mail"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Form Column -->
+          <div class="contact-form-col card reveal reveal-right">
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="form-name" class="form-label">Name</label>
+                <div class="input-wrapper">
+                  <i data-lucide="user" class="input-icon"></i>
+                  <input type="text" id="form-name" name="name" class="form-input" placeholder="Your Name" required>
+                </div>
+                <span class="error-message" id="error-name">Please enter your name</span>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email" class="form-label">Email</label>
+                <div class="input-wrapper">
+                  <i data-lucide="mail" class="input-icon"></i>
+                  <input type="email" id="form-email" name="email" class="form-input" placeholder="your.email@example.com" required>
+                </div>
+                <span class="error-message" id="error-email">Please enter a valid email address</span>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" class="form-label">Message</label>
+                <div class="input-wrapper">
+                  <textarea id="form-message" name="message" class="form-textarea" placeholder="Describe your project, ideas, or questions..." rows="5" required></textarea>
+                </div>
+                <span class="error-message" id="error-message">Message content cannot be empty</span>
+              </div>
+
+              <button type="submit" id="form-submit-btn" class="btn btn-primary btn-block">
+                <span>Send Message</span>
+                <i data-lucide="send" class="btn-icon"></i>
+              </button>
+
+              <div id="form-feedback" class="form-feedback-message">
+                <i data-lucide="check-circle" class="success-feedback-icon"></i>
+                <span class="feedback-text">Thank you! Your message has been sent successfully.</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="section-container footer-container">
+      <div class="footer-brand">
+        <a href="#hero" class="logo">
+          <span class="logo-accent">&lt;</span>BS<span class="logo-accent">/&gt;</span>
+          <span class="logo-text">Santosh.dev</span>
+        </a>
+        <p class="footer-motto">Building clean, premium web ecosystems with dedication and passion.</p>
+      </div>
+
+      <div class="footer-links-col">
+        <h4 class="footer-title">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-socials-col">
+        <h4 class="footer-title">Connect</h4>
+        <div class="footer-social-icons">
+          <a href="https://github.com/bangaru-santosh" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i data-lucide="github"></i>
+          </a>
+          <a href="https://linkedin.com/in/bangaru-santosh" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i data-lucide="linkedin"></i>
+          </a>
+          <a href="mailto:santosh.bangaru@example.com" aria-label="Email">
+            <i data-lucide="mail"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="section-container footer-bottom-container">
+        <p class="copyright">&copy; 2026 Bangaru Santosh. All rights reserved.</p>
+        <p class="attribution">Designed &amp; Crafted with <i data-lucide="heart" class="heart-icon"></i></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script JS -->
+  <script src="script.js"></script>
+</body>
+</html>
